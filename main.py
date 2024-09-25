@@ -5,16 +5,20 @@
 #     print("incorrect")
 
 
-def evenodd():
-    evenodd = int(input("input a number: "))
-    if evenodd % 2 == 0:
-        print("even")
-    else:
-        print("odd")
-evenodd()
+# def evenodd():
+#     evenodd = int(input("input a number: "))
+#     if evenodd % 2 == 0:
+#         print("even")
+#     else:
+#         print("odd")
+# evenodd()
 
 
-bill = int(input("Whats the bill?"))
 
-def thing(bill):
+
+def thing(): 
+        bill = int(input("Whats the bill?"))
         print(int(bill))
+quality = input("Whats the quality: bad, ok, good, great")
+
+thing()
