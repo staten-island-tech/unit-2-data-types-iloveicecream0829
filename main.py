@@ -19,6 +19,14 @@
 def thing(): 
         bill = int(input("Whats the bill?"))
         print(int(bill))
-quality = input("Whats the quality: bad, ok, good, great")
+        quality = input("Whats the quality: bad, ok, good, great?")
+        if quality == "bad":
+                print (bill)
+        if quality == "ok":
+                print (bill * 1.1)
+        if quality == "good":
+                print (bill * 1.15)
+        if quality == "great":
+                print (bill * 1.2)
 
 thing()
