@@ -16,17 +16,26 @@
 
 
 
-def thing(): 
-        bill = int(input("Whats the bill?"))
-        print(int(bill))
-        quality = input("Whats the quality: bad, ok, good, great?")
-        if quality == "bad":
-                print (bill)
-        if quality == "ok":
-                print (bill * 1.1)
-        if quality == "good":
-                print (bill * 1.15)
-        if quality == "great":
-                print (bill * 1.2)
+# def thing(): 
+#         bill = int(input("Whats the bill?"))
+#         print(int(bill))
+#         quality = input("Whats the quality: bad, ok, good, great?")
+#         if quality == "bad":
+#                 print (bill)
+#         if quality == "ok":
+#                 print (bill * 1.15)
+#         if quality == "good":
+#                 print (bill * 1.2)
+#         if quality == "great":
+#                 print (bill * 1.25)
 
-thing()
+# thing()
+
+def gcf(a, b):
+        a = int(input("Input a number you want the gcf of: "))
+        b = int(input("Input another number you want the gcf of: "))
+        gcf = fgcf(a, b)
+        print(f"The factor of {a} and {b} is {gcf}.")
+
+gcf(a, b)
+        
