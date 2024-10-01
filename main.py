@@ -32,30 +32,14 @@
 # thing()
 
 def fac():
-        num = int(input("Please enter the number you want the factor of."))
-        
-
-
-
-
-
-
-
-
-
-
-
+        num = int(input("Please enter the number you want the factors of."))
+        factors = []
+        for i in range(1, num + 1):
+                if num % i == 0:
+                        factors.append(i)
+        print(factors)
+fac()
 
 def fgcf(a, b):
-        while b:
-                a, b = b, a % b
-        return a
-
-def gcf():
-        a = int(input("Input a number you want the gcf of: "))
-        b = int(input("Input another number you want the gcf of: "))
-        gcf_value = fgcf(a, b)
-        print(f"The factor of {a} and {b} is {gcf_value}.")
-
-gcf()
         
+    
