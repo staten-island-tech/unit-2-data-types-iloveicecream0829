@@ -31,15 +31,22 @@
 
 # thing()
 
-def fac():
-        num = int(input("Please enter the number you want the factors of."))
-        factors = []
-        for i in range(1, num + 1):
-                if num % i == 0:
-                        factors.append(i)
-        print(factors)
-fac()
+# def fac():
+#         num = int(input("Please enter the number you want the factors of."))
+#         factors = []
+#         for i in range(1, num + 1):
+#                 if num % i == 0:
+#                         factors.append(i)
+#         print(factors)
+# fac()
+num1 = int(input("Please enter the number you want the factor."))
+num2 = int(input("Please enter another number you want the factor."))
+def gcf(num1, num2):
+        x = min(num1, num2)
 
-def fgcf(a, b):
-        
-    
+        gcf_value = 1
+        for i in range(1, x + 1):
+                # check if i is a factor of A,B
+                if num1 % i == 0 and num2 % i == 0:
+                        gcf_value = i  # Update GCF if i is a common factor
+gcf(num1, num2)
