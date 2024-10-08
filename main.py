@@ -39,9 +39,10 @@
 #                         factors.append(i)
 #         print(factors)
 # fac()
-num1 = int(input("Please enter the number you want the factor."))
-num2 = int(input("Please enter another number you want the factor."))
-def gcf(num1, num2):
+
+def gcf():
+        num1 = int(input("Please enter the number you want the factor."))
+        num2 = int(input("Please enter another number you want the factor."))
         x = min(num1, num2)
 
         gcf_value = 1
@@ -49,4 +50,5 @@ def gcf(num1, num2):
                 # check if i is a factor of A,B
                 if num1 % i == 0 and num2 % i == 0:
                         gcf_value = i  # Update GCF if i is a common factor
-gcf(num1, num2)
+        print(gcf_value)
+gcf()
